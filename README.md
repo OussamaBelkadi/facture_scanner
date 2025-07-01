@@ -1,17 +1,31 @@
-# flutter_application_1
+# 🧾 Facture Scanner – Flutter App
 
-A new Flutter project.
+**Facture Scanner** est une application mobile développée avec **Flutter** qui permet de scanner des factures à l’aide de l’appareil photo du téléphone et d’extraire automatiquement les données importantes comme la date, le montant et le nom du fournisseur grâce à la reconnaissance de texte (OCR).
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Fonctionnalités
 
-A few resources to get you started if this is your first Flutter project:
+- 📷 Scanner une facture avec l'appareil photo
+- 🔍 Extraire du texte imprimé grâce à **Google ML Kit OCR**
+- 🧠 Identifier les champs clés automatiquement :
+  - ✅ Montant total
+  - ✅ Date de la facture
+  - ✅ Fournisseur
+- 🎨 Interface personnalisée avec navigation fluide
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# facture_scanner
+## 📁 Structure du projet
+
+```plaintext
+lib/
+├── main.dart               # Point d'entrée principal
+├── pages/
+│   ├── home_page.dart      # Écran d'accueil
+│   ├── camera_page.dart    # Prise de photo et OCR
+│   └── result_page.dart    # Affichage des résultats
+├── utils/
+│   └── ocr_utils.dart      # Extraction des données avec regex
+└── theme/
+    └── app_theme.dart      # Thème visuel personnalisé
